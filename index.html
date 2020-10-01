@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your dream home</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header-container">
+        <img src="logo.png" alt="logo" width="100px" height="auto">
+        <div class="dropdown" >
+            <a href="#" class="dropbtn">Sök bostad</a>
+            <div class="dropdown-content"> 
+                <a href="#">link1</a>
+                <a href="#">link2</a>
+                <a href="#">link3</a>
+                <a href="#">link4</a>
+            </div>
+        </div>
+        <div class="dropdown clearfix" >
+            <a href="#" class="dropbtn">Sälja bostad</a>
+            <div class="dropdown-content"> 
+                <a href="#">link1</a>
+                <a href="#">link2</a>
+                <a href="#">link3</a>
+                <a href="#">link4</a>
+            </div>
+        </div>
+        <div class="dropdown clearfix" >
+            <a href="#" class="dropbtn">Nyheter</a>
+            <div class="dropdown-content"> 
+                <a href="#">link1</a>
+                <a href="#">link2</a>
+                <a href="#">link3</a>
+                <a href="#">link4</a>
+            </div>
+        </div>
+        <div class="dropdown clearfix" >
+            <a href="#" class="dropbtn">Bygga hus</a>
+            <div class="dropdown-content"> 
+                <a href="#">link1</a>
+                <a href="#">link2</a>
+                <a href="#">link3</a>
+                <a href="#">link4</a>
+            </div>
+        </div>
+        <div class="dropdown clearfix" >
+            <a href="#" class="dropbtn">Utland</a>
+            <div class="dropdown-content"> 
+                <a href="#">link1</a>
+                <a href="#">link2</a>
+                <a href="#">link3</a>
+                <a href="#">link4</a>
+            </div>
+        </div>
+        <button id="log-in"><a href="#">log in</a></button>
+        <button><a href="#">skappa konto</a></button>
+
+</header>
+<body>
+    <div class="main-container">
+
+        <div class="top-container">
+
+            <div class="background-img">
+                <img src="images/background-img.jpg" alt="background house picture" width="100%">
+            </div>
+
+          <!----- <div class="slide-show">
+                    <img src="images/house1.jpg" style="width:100%">
+                    <img src="images/house2.jpg" style="width:100%">
+                    <img src="images/house3.jpg" style="width:100%">
+                    <img src="images/house4.jpg" style="width:100%">
+                    <img src="images/house5.jpg" style="width:100%">
+                    <img src="images/house6.jpg" style="width:100%">
+            </div>--->
+                <div class="search-container">
+                        <label for="search">Område</label>
+                        <input type="search" id="search" placeholder="Skriv område eller adress">
+                        <label for="område">Utöka område med</label>
+                        <select class="first-box">
+                            <option>+0km</option>
+                            <option>+1km</option>
+                            <option>+2km</option>
+                            <option>+5km</option>
+                            <option>+10km</option>
+                            <option>+15km</option>
+                            <option>+30km</option>
+                            <option>+50km</option>
+                            <option>+100km</option>
+                        </select>
+                        <div class="first-box">
+                            <button>Alla typer</button>
+                            <button><a href="#">Villor</a></button>
+                            <button><a href="#">Radhus</a></button>
+                            <button><a href="#">Lägenheter</a></button>
+                            <button><a href="#">Fritidsboenden</a></button>
+                            <button><a href="#">Tomter</a></button>
+                            <button><a href="#">Gårdar/Skogar</a></button>
+                            <button><a href="#">Övriga</a></button>
+                        </div>
+                        <div class="second-box">
+                            <div>
+                                <label for="rum">Minst antal rum</label>
+                                <select name="antal-rum" id="rum">
+                                    <option value="">Alla</option>
+                                    <option value="">Alla</option>
+                                    <option value="">Alla</option>
+                                    <option value="">Alla</option>
+                                    <option value="">Alla</option>
+                                    <option value="">Alla</option>
+                                    <option value="">Alla</option>
+                                    <option value="">Alla</option>
+                                    <option value="">Alla</option>
+                                    <option value="">Alla</option>
+                                    <option value="">Alla</option>
+                                    <option value="">Alla</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="boarea">Boarea</label>
+                                <select name="size" id="boarea">
+                                    <option value="">Alla</option>
+                                    <option value="">Alla</option>
+                                    <option value="">Alla</option>
+                                    <option value="">Alla</option>
+                                    <option value="">Alla</option>
+                                    <option value="">Alla</option>
+                                    <option value="">Alla</option>
+                                    <option value="">Alla</option>
+                                    <option value="">Alla</option>
+                                    <option value="">Alla</option>
+                                    <option value="">Alla</option>
+                                    <option value="">Alla</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="price">Högst pris</label>
+                                <select name="highest-price" id="price">
+                                    <option value="">Alla</option>
+                                    <option value="">Alla</option>
+                                    <option value="">Alla</option>
+                                    <option value="">Alla</option>
+                                    <option value="">Alla</option>
+                                    <option value="">Alla</option>
+                                    <option value="">Alla</option>
+                                    <option value="">Alla</option>
+                                    <option value="">Alla</option>
+                                    <option value="">Alla</option>
+                                    <option value="">Alla</option>
+                                    <option value="">Alla</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="third-box">
+                            <div>
+                                <label for="new-production">Nyproduktion</label>
+                                <select name="style" id="new-production">
+                                    <option value="">Alla</option>
+                                    <option value="">Alla</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="keyword">Nyckelord</label>
+                                <input type="text" placeholder="Balkong, kakelugn, etc" id="keyword">
+                            </div>
+                        </div>
+                        <div class="fourth-box">
+                            <p>Fler sökfilter finns vid sökresultatet</p>
+                            <button>Hitta bostäder till salu</button>
+                        </div>
+                    </div>
+            </div>
+        <div class="middle-container">
+            <div class="row">
+                <div class="column">
+                <img src="images/inredning1.jpg">
+                </div>
+                <div class="column">
+                <img src="images/inredning2.jpg">
+                <img src="images/inredning3.jpg">
+                </div>
+            </div>
+            <p>Inredning & Inspiration</p>
+        </div>
+    </div>
+
+</body>
+</html>
