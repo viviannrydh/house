@@ -1,0 +1,27 @@
+
+.footer-firstpart{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 10%;
+    background-color: rgb(17, 107, 17, 0.6);
+  }
+  
+  .footer-firstpart div{
+    text-align: center;
+  }
+  
+  
+  .footer-secondpart{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    justify-content: space-around;
+    background-color: forestgreen;
+  
+  }
+  
+  
+  
+  
