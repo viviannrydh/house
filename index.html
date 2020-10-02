@@ -9,67 +9,69 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="header-container">
-        <img src="logo.png" alt="logo" width="100px" height="auto">
-        <div class="dropdown" >
-            <a href="#" class="dropbtn">Sök bostad</a>
-            <div class="dropdown-content"> 
-                <a href="#">link1</a>
-                <a href="#">link2</a>
-                <a href="#">link3</a>
-                <a href="#">link4</a>
+<header id="mySidebar" class="header-container sidebar">
+            <img src="logo.png" alt="logo" width="100px" height="auto">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <div class="dropdown" >
+                    <a href="#" class="dropbtn">Sök bostad</a>
+                    <div class="dropdown-content"> 
+                        <a href="#">link1</a>
+                        <a href="#">link2</a>
+                        <a href="#">link3</a>
+                        <a href="#">link4</a>
+                    </div>
+                </div>
+                <div class="dropdown clearfix" >
+                    <a href="#" class="dropbtn">Sälja bostad</a>
+                    <div class="dropdown-content"> 
+                        <a href="#">link1</a>
+                        <a href="#">link2</a>
+                        <a href="#">link3</a>
+                        <a href="#">link4</a>
+                    </div>
+                </div>
+                <div class="dropdown clearfix" >
+                    <a href="#" class="dropbtn">Nyheter</a>
+                    <div class="dropdown-content"> 
+                        <a href="#">link1</a>
+                        <a href="#">link2</a>
+                        <a href="#">link3</a>
+                        <a href="#">link4</a>
+                    </div>
+                </div>
+                <div class="dropdown clearfix" >
+                    <a href="#" class="dropbtn">Bygga hus</a>
+                    <div class="dropdown-content"> 
+                        <a href="#">link1</a>
+                        <a href="#">link2</a>
+                        <a href="#">link3</a>
+                        <a href="#">link4</a>
+                    </div>
+                </div>
+                <div class="dropdown clearfix" >
+                    <a href="#" class="dropbtn">Utland</a>
+                    <div class="dropdown-content"> 
+                        <a href="#">link1</a>
+                        <a href="#">link2</a>
+                        <a href="#">link3</a>
+                        <a href="#">link4</a>
+                    </div>
+                </div>
+                <button id="log-in"><a href="#">log in</a></button>
+                <button><a href="#">skappa konto</a></button>
             </div>
         </div>
-        <div class="dropdown clearfix" >
-            <a href="#" class="dropbtn">Sälja bostad</a>
-            <div class="dropdown-content"> 
-                <a href="#">link1</a>
-                <a href="#">link2</a>
-                <a href="#">link3</a>
-                <a href="#">link4</a>
-            </div>
-        </div>
-        <div class="dropdown clearfix" >
-            <a href="#" class="dropbtn">Nyheter</a>
-            <div class="dropdown-content"> 
-                <a href="#">link1</a>
-                <a href="#">link2</a>
-                <a href="#">link3</a>
-                <a href="#">link4</a>
-            </div>
-        </div>
-        <div class="dropdown clearfix" >
-            <a href="#" class="dropbtn">Bygga hus</a>
-            <div class="dropdown-content"> 
-                <a href="#">link1</a>
-                <a href="#">link2</a>
-                <a href="#">link3</a>
-                <a href="#">link4</a>
-            </div>
-        </div>
-        <div class="dropdown clearfix" >
-            <a href="#" class="dropbtn">Utland</a>
-            <div class="dropdown-content"> 
-                <a href="#">link1</a>
-                <a href="#">link2</a>
-                <a href="#">link3</a>
-                <a href="#">link4</a>
-            </div>
-        </div>
-        <button id="log-in"><a href="#">log in</a></button>
-        <button><a href="#">skappa konto</a></button>
-
-</header>
-<body>
-    <div class="main-container">
-
+        
+    </header>
+    <div class="main-container" id="main"> 
+            <button class="openbtn" onclick="openNav()">☰</button> 
         <div class="top-container">
 
             <div class="background-img">
-                <img src="images/background-img.jpg" alt="background house picture" width="100%">
+                <img src="background-img.jpg" alt="background house picture" width="100%">
             </div>
 
-          <!----- <div class="slide-show">
+            <!----- <div class="slide-show">
                     <img src="images/house1.jpg" style="width:100%">
                     <img src="images/house2.jpg" style="width:100%">
                     <img src="images/house3.jpg" style="width:100%">
@@ -78,6 +80,7 @@
                     <img src="images/house6.jpg" style="width:100%">
             </div>--->
                 <div class="search-container">
+                    
                         <label for="search">Område</label>
                         <input type="search" id="search" placeholder="Skriv område eller adress">
                         <label for="område">Utöka område med</label>
@@ -172,21 +175,98 @@
                             <p>Fler sökfilter finns vid sökresultatet</p>
                             <button>Hitta bostäder till salu</button>
                         </div>
-                    </div>
-            </div>
-        <div class="middle-container">
-            <div class="row">
-                <div class="column">
-                <img src="images/inredning1.jpg">
                 </div>
-                <div class="column">
-                <img src="images/inredning2.jpg">
-                <img src="images/inredning3.jpg">
-                </div>
-            </div>
-            <p>Inredning & Inspiration</p>
         </div>
+    <div class="middle-container">
+        <div class="row">
+            <div class="column">
+            <img src="inredning1.jpg">
+            </div>
+            <div class="column">
+            <img src="inredning2.jpg">
+            <img src="inredning3.jpg">
+            </div>
+        </div>
+        <p>Inredning & Inspiration</p>
     </div>
+    <div class="secondlast-container">
+        <div>
+            <h3>Bostadsmarknaden</h3>
+            <p>Svenskar rankar trygghet som viktigast vid köp av ny bostad</p>
+        </div>
+        <div>
+            <h3>Bostadsmarknaden</h3>
+            <p>Efter convid-19 förändrat sökbeteende</p>
+        </div>
+        <div>
+            <h3>Bostadsmarknaden</h3>
+            <p>Så väljer du rätt annonspaket</p>
+        </div>
 
+    </div>
+    <hr>
+    <div class="last-container">
+        <h4>Topplistor</h4>
+        <div class="images-container">
+            <img src="toplist1.jpg" alt="toplist picture">
+            <img src="toplist2.jpg" alt="toplist picture">
+            <img src="toplist3.jpeg" alt="toplist picture">
+            <img src="toplist4.jpeg" alt="toplist picture">
+            <img src="toplist5.jpg" alt="toplist picture">
+        </div>
+        <button>Visa alla topplistor</button>
+    </div>
+</div>
+<footer>
+    <div class="footer-firstpart">
+        <div>
+            <h4>Kontant</h4>
+            <p>Kundservice & kontakt</p>
+            <p>Om oss</p>
+            <p>Press</p>
+            <p>Bannerannonsering och reklam</p>
+            <p>Jobba hos oss</p>
+            <p>Bostadsstatistik</p>
+        </div>
+        <div>
+            <h4>Information</h4>
+            <p>Kundservice & kontakt</p>
+            <p>Om oss</p>
+            <p>Press</p>
+            <p>Bannerannonsering och reklam</p>
+            <p>Jobba hos oss</p>
+            <p>Bostadsstatistik</p>
+        </div>
+        <div>
+            <h4>Följ oss</h4>
+            <p>Nyhetsbrev</p>
+            <p>Fackbook</p>
+            <p>Instagram</p>
+            <p>Twitter</p>
+            <p>Linkedin</p>
+            <p>Pinterest</p>
+        </div>
+    <div>
+    
+</footer>
+<div class="footer-secondpart">
+    <p>Alla bostäder</p>
+    <p>Cookies</p>
+    <p>Integritet</p>
+    <p>Användarvillkor</p>
+    <p>Copy right</p>
+</div>
+    
+<script>
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+    }
+    </script>
 </body>
 </html>

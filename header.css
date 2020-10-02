@@ -1,0 +1,86 @@
+body{
+    box-sizing: border-box;
+    margin:0 20px;
+  }
+  
+  
+  
+  
+  .header-container{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin:0px 0px;
+      border: 1px solid black;
+      justify-content: flex-start;
+      align-items: center;
+      position: sticky;
+  
+  }
+  
+  
+  .dropdown{
+  
+      padding:10px 15px;
+      margin: 0px 15px;
+  
+  }
+  .dropbtn{
+      text-decoration: none;
+      text-align:center;
+      color:rgb(12, 12, 53);
+      padding:10px 16x;
+      font-size: 100%;
+  
+  
+  }
+  
+  .dropdown-content {
+      display: none;/*this line will hide the dropdown-content*/
+      position: absolute;
+      background-color: #f9f9f9;
+      margin-top: 10px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: center;
+    }
+  /*this line is to tell the dropdownbtn when to show dropdown content*/
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  
+  
+  .header-container button{
+      margin-right:10px;
+      font-size: 12px;
+      width:5%;
+      height:auto;
+      border:none;
+      
+  }
+  
+  .header-container button a{
+      text-decoration: none;
+      color:rgb(89, 143, 89);
+  }
+  
+  #log-in{
+      margin-left: auto;
+  }
+  
+  a:hover{
+      text-decoration: underline;
+  }
+  
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
